@@ -3,16 +3,13 @@
 
 function random_password($length=5) {
     # DECLARING ARRAYS LIKE CHARS, LETTERS, NUMBERS
-    # 'abcdefghijklmnouprstuwyz';
     $a_letters = range("a", "z");
     $A_letters = range("A", "Z");
 
-    # 1234567890
     $_numbers = [
         "1","2","3","4","5","6","7","8","9","0"
     ];
 
-    # ~! @#$%^&*_-+=`|\(){}[]:;/<>,.?/
     $_chain = "@,#,$,%,&,*,_,-,=,<,>,?";
     $_chars = explode(',', $_chain);
 
@@ -37,4 +34,4 @@ $pass = random_password($length);
 
 # PRINT GENERATED PASSWORD
 echo "Your new password is:    {$pass}\n";
-//var_dump($pass);
+
