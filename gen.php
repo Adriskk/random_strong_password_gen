@@ -1,5 +1,9 @@
 <?php
 
+#
+# RANDOM STRONG PASSWORD GENERATOR by Adriskk,
+# Poland, 17.7.2020
+#
 
 function random_password($length=5) {
     # DECLARING ARRAYS LIKE CHARS, LETTERS, NUMBERS
